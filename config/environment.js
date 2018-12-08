@@ -31,6 +31,17 @@ module.exports = function(environment) {
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
   }
 
+  //ENV.contentSecurityPolicy = {
+    //'default-src': "'none'",
+    //'script-src':  "'self' http://(c9 url).c9users.io:8081",
+    //'font-src':    "'self'",
+    //'connect-src': "'self' ws://(c9 url).c9users.io:8081",
+    //'img-src':     "'self'",
+    //'style-src':   "'self' http://(c9 url).c9users.io:8081",
+  //  'media-src':   "'self'"
+//};
+
+
   if (environment === 'test') {
     // Testem prefers this...
     ENV.locationType = 'none';
